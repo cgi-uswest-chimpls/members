@@ -1,0 +1,15 @@
+--- 
+applications: 
+  - 
+    buildpack: java_buildpack
+    instances: 1
+    memory: 750M
+    name: members
+    path: C:\Users\jerry.hagen\Documents\GitHub\members\build\libs\members-0.0.1-SNAPSHOT.jar
+    services: 
+      - cw-portal-config-server
+      - cw-portal-service-registry
+      - members-mysql
+    timeout: 180
+    env:
+      APP_VERSION: blue
